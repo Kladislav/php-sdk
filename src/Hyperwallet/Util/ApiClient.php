@@ -158,6 +158,12 @@ class ApiClient {
             if (!isset($options['headers'])) {
                 $options[] = array('headers' => array());
             }
+            if (!isset($options['connect_timeout'])) {
+                $options['connect_timeout'] = 3;
+            }
+            if (!isset($options['timeout'])) {
+                $options['timeout'] = 30;
+            }
             $options['headers']['Accept'] = 'application/json';
             if ($this->isEncrypted) {
                 $options['headers']['Accept'] = 'application/jose+json';
