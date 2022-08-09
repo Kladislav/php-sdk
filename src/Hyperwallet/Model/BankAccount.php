@@ -57,6 +57,7 @@ namespace Hyperwallet\Model;
  * @property string $mobileNumber The mobile number
  *
  * @property string $governmentId The government id
+ * @property string $governmentIdType The government id
  *
  * @property string $addressLine1 The address line 1
  * @property string $city The city
@@ -917,6 +918,26 @@ class BankAccount extends BaseModel {
      */
     public function setGovernmentId($governmentId) {
         $this->governmentId = $governmentId;
+        return $this;
+    }
+
+    /**
+     * Get the government id type
+     *
+     * @return string
+     */
+    public function getGovernmentIdType() {
+        return $this->governmentIdType;
+    }
+
+    /**
+     * Set the government id type
+     *
+     * @param string $governmentIdType
+     * @return BankAccount
+     */
+    public function setGovernmentIdType($governmentIdType) {
+        $this->governmentIdType = $governmentIdType;
         return $this;
     }
 
