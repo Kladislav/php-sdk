@@ -23,7 +23,8 @@
     "php": ">=5.5.9",
     "guzzlehttp/guzzle": "^6.2.1 || ^7.0.1",
     "phpseclib/phpseclib": "^2.0.11",
-    "gree/jose": "^2.2.1"
+    "gree/jose": "^2.2.1",
+    "guzzlehttp/uri-template": "^1.0"
   },
   "autoload": {
     "psr-4": { "Hyperwallet\\": "src/Hyperwallet", "ComposerScript\\" : "src/ComposerScript" }
